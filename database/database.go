@@ -1,9 +1,9 @@
 package database
 
 import (
+	"github.com/EdgeCloudX/libovsdb/model"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
 	"github.com/google/uuid"
-	"github.com/ovn-org/libovsdb/model"
-	"github.com/ovn-org/libovsdb/ovsdb"
 )
 
 // Database abstracts a database that a server can use to store and transact data

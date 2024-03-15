@@ -5,7 +5,7 @@ import (
 	"testing"
 	"text/template"
 
-	"github.com/ovn-org/libovsdb/ovsdb"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -54,8 +54,8 @@ package test
 import (
 	"encoding/json"
 
-	"github.com/ovn-org/libovsdb/model"
-	"github.com/ovn-org/libovsdb/ovsdb"
+	"github.com/EdgeCloudX/libovsdb/model"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
 )
 
 // FullDatabaseModel returns the DatabaseModel object to be used in libovsdb

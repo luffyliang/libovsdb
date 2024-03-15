@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/ovn-org/libovsdb/model"
-	"github.com/ovn-org/libovsdb/ovsdb"
+	"github.com/EdgeCloudX/libovsdb/model"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
 )
 
 // Note that this schema is not strictly a subset of the real OVS schema. It has

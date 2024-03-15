@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/ovn-org/libovsdb/mapper"
-	"github.com/ovn-org/libovsdb/model"
-	"github.com/ovn-org/libovsdb/ovsdb"
+	"github.com/EdgeCloudX/libovsdb/mapper"
+	"github.com/EdgeCloudX/libovsdb/model"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
 )
 
 type rowUpdate2 = ovsdb.RowUpdate2

@@ -3,9 +3,9 @@ package updates
 import (
 	"testing"
 
-	"github.com/ovn-org/libovsdb/model"
-	"github.com/ovn-org/libovsdb/ovsdb"
-	"github.com/ovn-org/libovsdb/test"
+	"github.com/EdgeCloudX/libovsdb/model"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
+	"github.com/EdgeCloudX/libovsdb/test"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

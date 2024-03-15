@@ -14,12 +14,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/EdgeCloudX/libovsdb/mapper"
+	"github.com/EdgeCloudX/libovsdb/model"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
+	"github.com/EdgeCloudX/libovsdb/updates"
 	"github.com/go-logr/logr"
 	"github.com/go-logr/stdr"
-	"github.com/ovn-org/libovsdb/mapper"
-	"github.com/ovn-org/libovsdb/model"
-	"github.com/ovn-org/libovsdb/ovsdb"
-	"github.com/ovn-org/libovsdb/updates"
 )
 
 const (

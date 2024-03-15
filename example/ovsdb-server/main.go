@@ -12,12 +12,12 @@ import (
 	"runtime/pprof"
 	"time"
 
-	"github.com/ovn-org/libovsdb/client"
-	"github.com/ovn-org/libovsdb/database/inmemory"
-	"github.com/ovn-org/libovsdb/example/vswitchd"
-	"github.com/ovn-org/libovsdb/model"
-	"github.com/ovn-org/libovsdb/ovsdb"
-	"github.com/ovn-org/libovsdb/server"
+	"github.com/EdgeCloudX/libovsdb/client"
+	"github.com/EdgeCloudX/libovsdb/database/inmemory"
+	"github.com/EdgeCloudX/libovsdb/example/vswitchd"
+	"github.com/EdgeCloudX/libovsdb/model"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
+	"github.com/EdgeCloudX/libovsdb/server"
 )
 
 var (

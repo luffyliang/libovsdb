@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"reflect"
 
+	"github.com/EdgeCloudX/libovsdb/cache"
+	"github.com/EdgeCloudX/libovsdb/model"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
 	"github.com/go-logr/logr"
-	"github.com/ovn-org/libovsdb/cache"
-	"github.com/ovn-org/libovsdb/model"
-	"github.com/ovn-org/libovsdb/ovsdb"
 )
 
 // API defines basic operations to interact with the database

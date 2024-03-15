@@ -8,12 +8,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ovn-org/libovsdb/database"
-	"github.com/ovn-org/libovsdb/mapper"
-	"github.com/ovn-org/libovsdb/model"
-	"github.com/ovn-org/libovsdb/ovsdb"
-
-	. "github.com/ovn-org/libovsdb/test"
+	"github.com/EdgeCloudX/libovsdb/database"
+	"github.com/EdgeCloudX/libovsdb/mapper"
+	"github.com/EdgeCloudX/libovsdb/model"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
 )
 
 func TestWaitOpEquals(t *testing.T) {

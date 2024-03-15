@@ -9,14 +9,14 @@ import (
 	"os"
 	"sync"
 
+	"github.com/EdgeCloudX/libovsdb/database"
+	"github.com/EdgeCloudX/libovsdb/model"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
 	"github.com/cenkalti/rpc2"
 	"github.com/cenkalti/rpc2/jsonrpc"
 	"github.com/go-logr/logr"
 	"github.com/go-logr/stdr"
 	"github.com/google/uuid"
-	"github.com/ovn-org/libovsdb/database"
-	"github.com/ovn-org/libovsdb/model"
-	"github.com/ovn-org/libovsdb/ovsdb"
 )
 
 // OvsdbServer is an ovsdb server

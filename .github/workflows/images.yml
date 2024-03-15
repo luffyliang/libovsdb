@@ -11,7 +11,7 @@ jobs:
 
   build:
     name: Build
-    if: github.repository == 'ovn-org/libovsdb'
+    if: github.repository == 'EdgeCloudX/libovsdb'
     runs-on: ubuntu-latest
     strategy:
       matrix:

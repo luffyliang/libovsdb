@@ -10,17 +10,15 @@ import (
 	"testing"
 	"time"
 
+	"github.com/EdgeCloudX/libovsdb/cache"
+	"github.com/EdgeCloudX/libovsdb/client"
+	"github.com/EdgeCloudX/libovsdb/database/inmemory"
+	"github.com/EdgeCloudX/libovsdb/model"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
+	"github.com/EdgeCloudX/libovsdb/test"
 	"github.com/google/uuid"
-	"github.com/ovn-org/libovsdb/cache"
-	"github.com/ovn-org/libovsdb/client"
-	"github.com/ovn-org/libovsdb/database/inmemory"
-	"github.com/ovn-org/libovsdb/model"
-	"github.com/ovn-org/libovsdb/ovsdb"
-	"github.com/ovn-org/libovsdb/test"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-
-	. "github.com/ovn-org/libovsdb/test"
 )
 
 func buildTestServerAndClient(t *testing.T) (client.Client, func()) {
