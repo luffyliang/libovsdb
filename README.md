@@ -1,7 +1,7 @@
 libovsdb
 ========
 
-[![libovsdb-ci](https://github.com/ovn-org/libovsdb/actions/workflows/ci.yml/badge.svg)](https://github.com/ovn-org/libovsdb/actions/workflows/ci.yml) [![Coverage Status](https://coveralls.io/repos/github/ovn-org/libovsdb/badge.svg?branch=main)](https://coveralls.io/github/ovn-org/libovsdb?branch=main) [![Go Report Card](https://goreportcard.com/badge/github.com/ovn-org/libovsdb)](https://goreportcard.com/report/github.com/ovn-org/libovsdb)
+[![libovsdb-ci](https://github.com/EdgeCloudX/libovsdb/actions/workflows/ci.yml/badge.svg)](https://github.com/EdgeCloudX/libovsdb/actions/workflows/ci.yml) [![Coverage Status](https://coveralls.io/repos/github/EdgeCloudX/libovsdb/badge.svg?branch=main)](https://coveralls.io/github/EdgeCloudX/libovsdb?branch=main) [![Go Report Card](https://goreportcard.com/badge/github.com/EdgeCloudX/libovsdb)](https://goreportcard.com/report/github.com/EdgeCloudX/libovsdb)
 
 An OVSDB Library written in Go
 
@@ -135,24 +135,24 @@ This package is divided into several sub-packages. Documentation for each sub-pa
 * **updates**: common code to handle model updates [![godoc for libovsdb/updates][updatesbadge]][updatesdoc]
 
 [doc]: https://pkg.go.dev/
-[clientbadge]: https://pkg.go.dev/badge/github.com/ovn-org/libovsdb/client
-[mapperbadge]: https://pkg.go.dev/badge/github.com/ovn-org/libovsdb/mapper
-[modelbadge]: https://pkg.go.dev/badge/github.com/ovn-org/libovsdb/model
-[ovsdbbadge]: https://pkg.go.dev/badge/github.com/ovn-org/libovsdb/ovsdb
-[cachebadge]: https://pkg.go.dev/badge/github.com/ovn-org/libovsdb/cache
-[genbadge]: https://pkg.go.dev/badge/github.com/ovn-org/libovsdb/modelgen
-[serverbadge]: https://pkg.go.dev/badge/github.com/ovn-org/libovsdb/server
-[dbbadge]: https://pkg.go.dev/badge/github.com/ovn-org/libovsdb/database
-[updatesbadge]: https://pkg.go.dev/badge/github.com/ovn-org/libovsdb/server
-[clientdoc]: https://pkg.go.dev/github.com/ovn-org/libovsdb/client
-[mapperdoc]: https://pkg.go.dev/github.com/ovn-org/libovsdb/mapper
-[modeldoc]: https://pkg.go.dev/github.com/ovn-org/libovsdb/model
-[ovsdbdoc]: https://pkg.go.dev/github.com/ovn-org/libovsdb/ovsdb
-[cachedoc]: https://pkg.go.dev/github.com/ovn-org/libovsdb/cache
-[gendoc]: https://pkg.go.dev/github.com/ovn-org/libovsdb/modelgen
-[serverdoc]: https://pkg.go.dev/github.com/ovn-org/libovsdb/server
-[dbdoc]: https://pkg.go.dev/github.com/ovn-org/libovsdb/database
-[updatesdoc]: https://pkg.go.dev/github.com/ovn-org/libovsdb/updates
+[clientbadge]: https://pkg.go.dev/badge/github.com/EdgeCloudX/libovsdb/client
+[mapperbadge]: https://pkg.go.dev/badge/github.com/EdgeCloudX/libovsdb/mapper
+[modelbadge]: https://pkg.go.dev/badge/github.com/EdgeCloudX/libovsdb/model
+[ovsdbbadge]: https://pkg.go.dev/badge/github.com/EdgeCloudX/libovsdb/ovsdb
+[cachebadge]: https://pkg.go.dev/badge/github.com/EdgeCloudX/libovsdb/cache
+[genbadge]: https://pkg.go.dev/badge/github.com/EdgeCloudX/libovsdb/modelgen
+[serverbadge]: https://pkg.go.dev/badge/github.com/EdgeCloudX/libovsdb/server
+[dbbadge]: https://pkg.go.dev/badge/github.com/EdgeCloudX/libovsdb/database
+[updatesbadge]: https://pkg.go.dev/badge/github.com/EdgeCloudX/libovsdb/server
+[clientdoc]: https://pkg.go.dev/github.com/EdgeCloudX/libovsdb/client
+[mapperdoc]: https://pkg.go.dev/github.com/EdgeCloudX/libovsdb/mapper
+[modeldoc]: https://pkg.go.dev/github.com/EdgeCloudX/libovsdb/model
+[ovsdbdoc]: https://pkg.go.dev/github.com/EdgeCloudX/libovsdb/ovsdb
+[cachedoc]: https://pkg.go.dev/github.com/EdgeCloudX/libovsdb/cache
+[gendoc]: https://pkg.go.dev/github.com/EdgeCloudX/libovsdb/modelgen
+[serverdoc]: https://pkg.go.dev/github.com/EdgeCloudX/libovsdb/server
+[dbdoc]: https://pkg.go.dev/github.com/EdgeCloudX/libovsdb/database
+[updatesdoc]: https://pkg.go.dev/github.com/EdgeCloudX/libovsdb/updates
 
 ## Quick API Examples
 
@@ -254,7 +254,7 @@ In this repository there is also a code-generator capable of generating all the 
 
 It can be used as follows:
 
-    go install github.com/ovn-org/libovsdb/cmd/modelgen
+    go install github.com/EdgeCloudX/libovsdb/cmd/modelgen
 
     $GOPATH/bin/modelgen -p ${PACKAGE_NAME} -o {OUT_DIR} ${OVSDB_SCHEMA}
     Usage of modelgen:
@@ -289,7 +289,7 @@ In your application, load the ClientDBModel, connect to the server and start int
 
     import (
         "fmt"
-        "github.com/ovn-org/libovsdb/client"
+        "github.com/EdgeCloudX/libovsdb/client"
 
         generated "example.com/example/mypackage"
     )

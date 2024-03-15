@@ -12,11 +12,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/EdgeCloudX/libovsdb/cache"
+	"github.com/EdgeCloudX/libovsdb/client"
+	"github.com/EdgeCloudX/libovsdb/model"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
 	"github.com/google/uuid"
-	"github.com/ovn-org/libovsdb/cache"
-	"github.com/ovn-org/libovsdb/client"
-	"github.com/ovn-org/libovsdb/model"
-	"github.com/ovn-org/libovsdb/ovsdb"
 )
 
 // ORMBridge is the simplified ORM model of the Bridge table

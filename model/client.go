@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/ovn-org/libovsdb/mapper"
-	"github.com/ovn-org/libovsdb/ovsdb"
+	"github.com/EdgeCloudX/libovsdb/mapper"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
 )
 
 // ColumnKey addresses a column and optionally a key within a column

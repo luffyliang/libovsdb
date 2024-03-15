@@ -6,14 +6,14 @@ import (
 	"os"
 	"sync"
 
+	"github.com/EdgeCloudX/libovsdb/cache"
+	dbase "github.com/EdgeCloudX/libovsdb/database"
+	"github.com/EdgeCloudX/libovsdb/database/transaction"
+	"github.com/EdgeCloudX/libovsdb/model"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
 	"github.com/go-logr/logr"
 	"github.com/go-logr/stdr"
 	"github.com/google/uuid"
-	"github.com/ovn-org/libovsdb/cache"
-	dbase "github.com/ovn-org/libovsdb/database"
-	"github.com/ovn-org/libovsdb/database/transaction"
-	"github.com/ovn-org/libovsdb/model"
-	"github.com/ovn-org/libovsdb/ovsdb"
 )
 
 type inMemoryDatabase struct {

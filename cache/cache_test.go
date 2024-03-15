@@ -6,11 +6,11 @@ import (
 	"math/rand"
 	"testing"
 
+	"github.com/EdgeCloudX/libovsdb/model"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
+	"github.com/EdgeCloudX/libovsdb/test"
+	"github.com/EdgeCloudX/libovsdb/updates"
 	"github.com/go-logr/logr"
-	"github.com/ovn-org/libovsdb/model"
-	"github.com/ovn-org/libovsdb/ovsdb"
-	"github.com/ovn-org/libovsdb/test"
-	"github.com/ovn-org/libovsdb/updates"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

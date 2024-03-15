@@ -4,14 +4,12 @@ import (
 	"encoding/json"
 	"testing"
 
+	"github.com/EdgeCloudX/libovsdb/database/inmemory"
+	"github.com/EdgeCloudX/libovsdb/model"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
 	"github.com/google/uuid"
-	"github.com/ovn-org/libovsdb/database/inmemory"
-	"github.com/ovn-org/libovsdb/model"
-	"github.com/ovn-org/libovsdb/ovsdb"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-
-	. "github.com/ovn-org/libovsdb/test"
 )
 
 func TestOvsdbServerMonitor(t *testing.T) {

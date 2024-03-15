@@ -5,10 +5,10 @@ import (
 	"log"
 	"sync"
 
+	"github.com/EdgeCloudX/libovsdb/database"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
 	"github.com/cenkalti/rpc2"
 	"github.com/google/uuid"
-	"github.com/ovn-org/libovsdb/database"
-	"github.com/ovn-org/libovsdb/ovsdb"
 )
 
 // connectionMonitors maps a connection to a map or monitors

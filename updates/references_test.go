@@ -9,9 +9,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ovn-org/libovsdb/database"
-	"github.com/ovn-org/libovsdb/model"
-	"github.com/ovn-org/libovsdb/ovsdb"
+	"github.com/EdgeCloudX/libovsdb/database"
+	"github.com/EdgeCloudX/libovsdb/model"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
 )
 
 const referencesTestSchema = `
@@ -535,12 +535,12 @@ func TestProcessReferences(t *testing.T) {
 			}
 			assert.NoError(t, err, "got a different error than expected")
 
-			//gotModelUpdates := gotUpdates.(modelUpdatesWithReferences).ModelUpdates
+			// gotModelUpdates := gotUpdates.(modelUpdatesWithReferences).ModelUpdates
 			wantModelUpdates, err := getUpdates(td.existingModels, td.finalModels)
 			require.NoError(t, err, "failed to build updates from existing and final models")
 			assert.Equal(t, wantModelUpdates, gotModelUpdates, "got different updates than expected")
 
-			//gotUpdatedReferences := gotUpdates.(modelUpdatesWithReferences).references
+			// gotUpdatedReferences := gotUpdates.(modelUpdatesWithReferences).references
 			assert.Equal(t, td.wantUpdatedReferences, gotReferenceUpdates, "got different reference updates than expected")
 
 			gotMergedModelUpdates := onUpdatesCopy

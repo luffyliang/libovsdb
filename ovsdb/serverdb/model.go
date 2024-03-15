@@ -6,8 +6,8 @@ package serverdb
 import (
 	"encoding/json"
 
-	"github.com/ovn-org/libovsdb/model"
-	"github.com/ovn-org/libovsdb/ovsdb"
+	"github.com/EdgeCloudX/libovsdb/model"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
 )
 
 // FullDatabaseModel returns the DatabaseModel object to be used in libovsdb

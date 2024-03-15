@@ -3,7 +3,7 @@ package updates
 import (
 	"testing"
 
-	"github.com/ovn-org/libovsdb/ovsdb"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
 	"github.com/stretchr/testify/assert"
 )
 

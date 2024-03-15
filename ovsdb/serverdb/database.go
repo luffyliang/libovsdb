@@ -3,7 +3,7 @@
 
 package serverdb
 
-import "github.com/ovn-org/libovsdb/model"
+import "github.com/EdgeCloudX/libovsdb/model"
 
 const DatabaseTable = "Database"
 

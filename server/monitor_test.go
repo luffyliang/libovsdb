@@ -3,9 +3,9 @@ package server
 import (
 	"testing"
 
-	"github.com/ovn-org/libovsdb/ovsdb"
-	"github.com/ovn-org/libovsdb/test"
-	"github.com/ovn-org/libovsdb/updates"
+	"github.com/EdgeCloudX/libovsdb/ovsdb"
+	"github.com/EdgeCloudX/libovsdb/test"
+	"github.com/EdgeCloudX/libovsdb/updates"
 	"github.com/stretchr/testify/assert"
 )
 
