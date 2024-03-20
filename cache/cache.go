@@ -12,6 +12,7 @@ import (
 	"sort"
 	"strings"
 	"sync"
+	"time"
 
 	"github.com/go-logr/logr"
 	"github.com/go-logr/stdr"
@@ -26,6 +27,7 @@ const (
 	addEvent        = "add"
 	deleteEvent     = "delete"
 	bufferSize      = 65536
+	resetInterval   = time.Second * 5 // 重置计数器的时间间隔
 	columnDelimiter = ","
 	keyDelimiter    = "|"
 )
@@ -1109,13 +1111,15 @@ type eventProcessor struct {
 	handlersMutex sync.Mutex
 	handlers      []EventHandler
 	logger        *logr.Logger
+	lastLogTime   time.Time // 上次日志输出的时间
 }
 
 func newEventProcessor(capacity int, logger *logr.Logger) *eventProcessor {
 	return &eventProcessor{
-		events:   make(chan *event, capacity),
-		handlers: []EventHandler{},
-		logger:   logger,
+		events:      make(chan *event, capacity),
+		handlers:    []EventHandler{},
+		logger:      logger,
+		lastLogTime: time.Now(),
 	}
 }
 
@@ -1131,6 +1135,7 @@ func (e *eventProcessor) AddEventHandler(handler EventHandler) {
 
 // AddEvent writes an event to the channel
 func (e *eventProcessor) AddEvent(eventType string, table string, old model.Model, new model.Model) {
+	currentTime := time.Now()
 	// We don't need to check for error here since there
 	// is only a single writer. RPC is run in blocking mode
 	event := event{
@@ -1144,7 +1149,11 @@ func (e *eventProcessor) AddEvent(eventType string, table string, old model.Mode
 		// noop
 		return
 	default:
-		e.logger.V(0).Info("dropping event because event buffer is full")
+		// 如果距离上次日志输出超过时间间隔，打印日志并更新上次日志输出时间
+		if currentTime.Sub(e.lastLogTime) > resetInterval {
+			e.logger.V(0).Info("dropping event because event buffer is full")
+			e.lastLogTime = currentTime
+		}
 	}
 }
 
